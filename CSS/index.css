@@ -1,14 +1,12 @@
 @charset "UTF-8";
 @font-face {
     font-family:'Techno';
-    src: url(FONTS/Technoma.otf);
-    src: url('FONTS/Technoma.otf');
+    src: url(../FONTS/Technoma.otf);
 }
 
 @font-face {
     font-family:'RobotoLight';
-    src: url(FONTS/Roboto-Light.ttf);
-    src: url('FONTS/Roboto-Light.ttf');
+    src: url(../FONTS/Roboto-Light.ttf);
 }
 
 * {
@@ -18,7 +16,7 @@
 }
 
 body {
-    background-image: url(/IMG/closeup-computer-screen-software-developer-typing-programming-language-it-startup-agency-display-concept-system-engineer-writing-source-code-scrolling-text-database-functions-script.jpg);
+    background-image: url(../IMG/closeup-computer-screen-software-developer-typing-programming-language-it-startup-agency-display-concept-system-engineer-writing-source-code-scrolling-text-database-functions-script.jpg);
     width: 100%;
     height: 100vh;
     background-size: 100%;
