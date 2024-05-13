@@ -9,6 +9,11 @@
     src: url(../FONTS/Roboto-Light.ttf);
 }
 
+@font-face {
+    font-family:'Roboto';
+    src: url(../FONTS/Roboto-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
