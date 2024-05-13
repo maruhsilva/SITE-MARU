@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
     font-family:'Techno';
-    src: url(FONTS/Technoma.otf);
+    src: url(/FONTS/Technoma.otf);
 }
 
 @font-face {
     font-family:'RobotoLight';
-    src: url(FONTS/Roboto-Light.ttf);
+    src: url(/FONTS/Roboto-Light.ttf);
 }
 
 * {
@@ -117,6 +117,15 @@ body .content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-family: 'RobotoLight';
+    padding-top: 5%;
+    font-style: normal;
+    color: #8fa998;
+    letter-spacing: .05rem;
 }
 
 .content aside {
