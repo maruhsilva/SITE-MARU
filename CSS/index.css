@@ -657,6 +657,10 @@ footer a:hover {
         transition: .6s;
     }
 
+    .content h2 {
+        font-size: 1rem;
+    }
+
     .content aside {
         font-size: 2rem;
         padding-top: 0;
