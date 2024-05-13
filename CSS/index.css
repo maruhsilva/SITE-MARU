@@ -645,11 +645,11 @@ footer a:hover {
     }
 
     .menuindex ul li a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .menuindex ul li a:hover {
-        font-size: 1.6rem;
+        font-size: 1.35rem;
     }
 
     .content {
@@ -677,7 +677,7 @@ footer a:hover {
     }
 
     .info h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .info .fas.fa-solid.fa-circle {
