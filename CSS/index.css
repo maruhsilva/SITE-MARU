@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
     font-family:'Techno';
-    src: url(/FONTS/Technoma.otf);
+    src: url(FONTS/Technoma.otf);
 }
 
 @font-face {
     font-family:'RobotoLight';
-    src: url(/FONTS/Roboto-Light.ttf);
+    src: url(FONTS/Roboto-Light.ttf);
 }
 
 * {
