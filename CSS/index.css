@@ -1,0 +1,703 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Techno';
+    src: url(./FONTS/Technoma.otf);
+}
+
+@font-face {
+    font-family:'RobotoLight';
+    src: url(./FONTS/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./IMG/closeup-computer-screen-software-developer-typing-programming-language-it-startup-agency-display-concept-system-engineer-writing-source-code-scrolling-text-database-functions-script.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+body .menuindex,
+.content {
+    background-color: #154854;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+
+.menuindex {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menuindex ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menuindex ul li {
+    justify-content: space-evenly;
+    position: relative;
+    padding-right: 4rem;
+    animation-name: slideout;
+    animation-duration: 2s;
+}
+
+.menuindex ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-family: 'Techno';
+}
+
+.menulogo img {
+    width: 180px;
+    height: 175px;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+.menulogo img:hover {
+    width: 183px;
+    height: 177px;
+    transition: .3s;
+}
+
+.menuindex ul li a:hover {
+    color: #dbc2cf;
+    transition: .5s;
+    font-size: 1.48rem;
+}
+
+/*
+
+@keyframes slidein {
+    from {
+        margin-left: -200%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        margin-left: 200%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+*/
+
+/* CONTENT */
+
+body .content {
+    height: 80vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content aside {
+    font-family: 'Roboto';
+    color: white;
+    font-size: 3.5rem;
+    max-width: 20%;
+}
+
+.content article img {
+    width: 600px;
+    height: 600px;
+    border-radius: 15%;
+    border: #154854;
+    box-shadow: 10px 10px 10px hsl(0, 0%, 0%, .3);
+    animation-name: slideout1;
+    animation-duration: 2.5s;
+}
+
+@keyframes slideout1 {
+    from {
+        margin-left: 200%;
+        
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* INFO */
+
+body .info {
+    background-color: hsl(191, 60%, 21%, .7);
+}
+
+.info h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.fas.fa-solid {
+    font-size: small;
+    padding: 1%;
+}
+
+/* SERVIÇOS */
+
+body .servicos {
+    background-color: #8fa998;
+}
+
+.servicos .blocos {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0%;
+}
+
+.servicos ul {
+    display: flex;
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center; 
+    padding-bottom: 5%;
+}
+
+.servicos li {
+    list-style: none;
+    max-width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.servicos li .fa-brands,
+.fa-solid.fa-mobile,
+.fa-solid.fa-code {
+    font-size: 3rem;
+    position: relative;
+    align-items: baseline;
+    display: flex;
+    color: hsl(0, 0%, 100%, .9);
+    top: 5%;
+}
+
+.servicos .blocos li .fa-brands:hover {
+    font-size: 4rem;
+    transition: .8s;
+}
+
+.servicos .blocos li .fa-solid.fa-code:hover {
+    font-size: 4rem;
+    transition: .8s;
+}
+
+.servicos .blocos li .fa-solid.fa-mobile:hover {
+    font-size: 4rem;
+    transition: .8s;
+}
+
+.servicos p {
+    background-color: hsl(191, 60%, 21%, .5);
+    padding: 5%;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    border-radius: 0 0 30px 30px;
+    font-family: 'RobotoLight';
+    letter-spacing: .03rem;
+    color: hsl(0, 0%, 100%, .9);
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer {
+    from {
+        color: hsl(0, 0%, 100%, 0);
+    }
+    to {
+    
+    }
+}
+
+.servicos h2 {
+    background-color: hsl(191, 60%, 21%, .5);
+    padding-top: 5%;
+    font-size: 1.5rem;
+    border-radius: 30px 30px 0 0;
+    color: white;
+    font-family: 'Roboto';
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.servicos a {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.servicos a:hover {
+    color: #8fa998;
+    transition: .6s;
+    font-size: 1.05rem;
+}
+
+/*COMO FUNCIONA?*/
+
+.funcionamento {
+    padding: 5%;
+    background-color: hsl(191, 60%, 21%, .7);
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Techno';
+    letter-spacing: .5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+body .funcionamento1 {
+    background-color: #154854;
+}
+
+.icons {
+    align-items: center;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.icons ul li {
+    background-color: none;
+    max-width: 25%;
+    padding: 3%;
+}
+
+.icons ul li p {
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'RobotoLight';
+    letter-spacing: .1rem;
+}
+
+.funcionamento1 .icons .fa-brands.fa-whatsapp,
+.fa-solid {
+    font-size: 2rem;
+}
+
+
+.funcionamento1 .icons ul h1 {
+    font-family: 'Techno';
+    font-size: 15rem;
+    color: hsl(0, 0%, 0%, .1);
+    z-index: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 7%;
+    cursor: context-menu;
+}
+
+.funcionamento1 .icons ul h1:hover {
+    color: hsl(0, 0%, 0%, .05);
+    transition: .3s;
+}
+
+/*FAQ*/
+
+body .perguntas {
+    background-color: #8fa998;
+    padding-top: 3%;
+}
+
+.perguntas { 
+    padding: 5%;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+}
+
+.perguntas aside {
+    padding: 5%;
+    padding-top: 3%;
+    padding-right: 2%;
+    margin: 0;
+    text-align: justify;
+    width: 100%;
+}
+
+
+.perguntas aside h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-align: justify;
+}
+
+.perguntas aside p {
+    font-size: 1.2rem;
+    font-family: 'RobotoLight';
+    letter-spacing: .03rem;
+    padding-top: 3%;
+}
+
+.container {
+    padding: 5%;
+    padding-right: 5%;
+    padding-left: 19%;
+}
+
+.ques {
+    background-color: hsl(191, 60%, 21%, .7);
+    color: hsl(0, 0%, 100%, .9);
+    padding: 10px 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-family: 'Roboto';
+    border-bottom: 1px solid hsl(0, 0%, 0%, .3);
+    box-shadow: 10px 10px 10px hsl(0, 0%, 0%, .25);    
+}
+
+.ques .fa-solid.fa-plus {
+    font-size: 15px;
+}
+
+.ques:hover {
+    background-color: #154854;
+
+}
+
+.ans {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+    font-family: 'RobotoLight';
+}
+
+.faq i{
+    transition: all .3s ease-in-out;
+}
+
+.faq-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq.active .ans {
+    max-height: 300px;
+}
+
+.faq.active i{
+    transform: rotate(45deg);
+}
+
+.ans p {
+    background-color: #8fa998;
+    padding: 20px;
+    font-size: 19px;
+    border-top: 1px solid #154854;
+    letter-spacing: .05rem;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #154854;
+    color: white;
+    text-align: center;
+    font-family: 'RobotoLight';
+    padding: 15px;
+    font-size: 13px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white
+}
+
+footer a:hover {
+    color: #8fa998;
+    transition: .3s;
+}
+
+@media (max-width: 1605px) {
+
+    body .menuindex {
+        background-color: #154854;
+        
+    }
+
+    .content aside {
+        font-size: 2.5rem;
+    }
+
+    .content article img {
+        transition: .6s;
+        width: 450px;
+        height: 450px;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info .fas.fa-solid.fa-circle {
+        font-size: .5rem;
+    }
+
+    .blocos ul {
+        flex-direction: column;
+    }
+
+    .blocos ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento {
+        font-size: 1.5rem;
+    }
+
+    .funcionamento1 ul {
+        flex-direction: column;
+    }
+
+    .funcionamento1 ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento1 .icons ul h1 {
+        font-size: 12rem;
+        color: hsl(0, 0%, 0%, .35);
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .perguntas {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 2%;
+    }   
+}
+
+@media (max-width: 1148px) {
+
+    body .menuindex {
+        background-color: #154854;
+        
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content aside {
+        font-size: 2.5rem;
+        max-width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .content article img {
+        transition: .6s;
+        width: 450px;
+        height: 450px;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info .fas.fa-solid.fa-circle {
+        font-size: .5rem;
+    }
+
+    .blocos ul {
+        flex-direction: column;
+    }
+
+    .blocos ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento {
+        font-size: 1.5rem;
+    }
+
+    .funcionamento1 ul {
+        flex-direction: column;
+    }
+
+    .funcionamento1 ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento1 .icons ul h1 {
+        font-size: 12rem;
+        color: hsl(0, 0%, 0%, .35);
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .perguntas {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 2%;
+    }   
+}
+
+@media (max-width: 700px) {
+
+    body .menuindex {
+        background-color: #154854;
+        
+    }
+
+    .menulogo img {
+        display: none;
+        width: 100px;
+        height: 100px;
+        padding: 4%;
+    }
+
+    .menulogo img:hover {
+        width: 95px;
+        height: 95px;
+    }
+
+    .menuindex {
+        justify-content: center;
+        padding: 3%;
+        padding-bottom: 0;
+    }
+
+    .menuindex ul {
+        align-items: center;
+        display: flex;
+    }
+
+    .menuindex ul li {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+        padding: .5rem;
+        justify-content: space-evenly;
+    }
+
+    .menuindex ul li a {
+        font-size: 1.5rem;
+    }
+
+    .menuindex ul li a:hover {
+        font-size: 1.6rem;
+    }
+
+    .content {
+        flex-direction: column;
+        transition: .6s;
+    }
+
+    .content aside {
+        font-size: 2rem;
+        padding-top: 0;
+        padding: 5%;
+        padding-top: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .content article img {
+        transition: .6s;
+        width: 350px;
+        height: 350px;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info .fas.fa-solid.fa-circle {
+        font-size: .5rem;
+    }
+
+    .blocos ul {
+        flex-direction: column;
+    }
+
+    .blocos ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento {
+        font-size: 1.5rem;
+    }
+
+    .funcionamento1 ul {
+        flex-direction: column;
+    }
+
+    .funcionamento1 ul li {
+        max-width: 100%;
+    }
+
+    .funcionamento1 .icons ul h1 {
+        font-size: 12rem;
+        color: hsl(0, 0%, 0%, .35);
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .perguntas {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 2%;
+    }
+}
