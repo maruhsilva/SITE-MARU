@@ -84,15 +84,48 @@ body .menuindex,
     font-size: 1.48rem;
 }
 
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #fff;
+}
+
 @media (max-width: 700px) {
+    .hamburger {
+        display: block;
+        z-index: 999;
+    }
+
+    .menuindex ul {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 0px;
+        width: 50%;
+        height: 100vh;
+        background: #154854;
+        padding: 30px;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    #nav_check:checked ~ .menuindex ul {
+        left: 0;
+    }
 
     body .menuindex {
         background-color: #154854;
-        
     }
 
     .menulogo img {
-        display: none;
+        display: block;
         width: 100px;
         height: 100px;
         padding: 4%;
@@ -104,14 +137,10 @@ body .menuindex,
     }
 
     .menuindex {
-        justify-content: center;
+        justify-content: space-around;
         padding: 3%;
         padding-bottom: 0;
-    }
-
-    .menuindex ul {
-        align-items: center;
-        display: flex;
+        flex-direction: row;
     }
 
     .menuindex ul li {
@@ -124,6 +153,7 @@ body .menuindex,
 
     .menuindex ul li a {
         font-size: 1.3rem;
+        margin: 5px 0;
     }
 
     .menuindex ul li a:hover {
