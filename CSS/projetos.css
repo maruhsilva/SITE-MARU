@@ -14,6 +14,11 @@
     src: url(../FONTS/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family:'Tagon';
+    src: url(../FONTS/Tagon.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -111,6 +116,7 @@ body .menuindex,
         width: 100%;
         left: -100%;
         top: 0px;
+        z-index: 999;
         width: 50%;
         height: 100vh;
         background: #154854;
@@ -133,7 +139,8 @@ body .menuindex,
         display: block;
         width: 100px;
         height: 100px;
-        padding: 4%;
+        padding-top: 0;
+        padding: 5%;
     }
 
     .menulogo img:hover {
@@ -165,6 +172,163 @@ body .menuindex,
         font-size: 1.35rem;
     }
 }
+
+/*PROJETOS*/
+
+.projeto {
+    background-color: #8fa998;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projeto h1 {
+    font-size: 3rem;
+    padding: 1%;
+    color: #fff;
+    font-family: 'Tagon';
+    letter-spacing: .08rem;
+}
+
+.projeto1 {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projeto1 h2 {
+    font-size: .9rem;
+    color: #fff;
+    padding: .5%;
+    font-family: 'RobotoLight';
+}
+
+@media (max-width: 700px) {
+
+    .projeto h1 {
+        padding: 3%;
+    }
+
+    .projeto1 h2 {
+        padding: 2%;
+        font-size: .85rem;
+        letter-spacing: .04rem;
+    }
+
+    .content {
+        padding-top: 5%;
+    }
+}
+
+/*CONTENT*/
+
+.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Card */
+  .card {
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+  }
+  
+  /* Card Header*/
+  .card-header {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .card-img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+  }
+  
+  /* Card Body */
+  .card-body {
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto';
+  }
+  
+  .card-local {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Tagon';
+    letter-spacing: .1rem;
+  }
+  
+  .card-titulo {
+    font-size: 10px;
+  }
+  
+  .card-texto {
+    font-size: 14px;
+    width: 250px;
+    margin: 0 auto;
+    font-family: 'RobotoLight';
+  }
+  
+  /* Card Footer */
+  .card-footer {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #000;
+  }
+  
+  .card-footer a {
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 600;
+  }
+  
+  /* Cores Cards */
+  .card-1 .card-footer {
+    background-color: #8fa998;
+  }
+  
+  .card-1 .card-local {
+    color: #154854;
+  }
+  
+  .card-2 .card-footer {
+    background-color: #8fa998;
+  }
+  
+  .card-2 .card-local {
+    color: #154854;
+  }
+  
+  .card-3 .card-footer {
+    background-color: #8fa998;
+  }
+  
+  .card-3 .card-local {
+    color: #154854;
+  }
+  
+  /* Animação Hover */
+  .card:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
 
 /*Footer*/
 
