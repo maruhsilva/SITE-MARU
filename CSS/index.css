@@ -624,9 +624,12 @@ footer a:hover {
 
 @media (max-width: 700px) {
 
+    body {
+        background-image: url(../IMG/programming-background-with-html-text.jpg);
+    }
+
     body .menuindex {
         background-color: #154854;
-        
     }
 
     .hamburger {
