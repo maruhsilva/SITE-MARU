@@ -152,6 +152,7 @@ body .menuindex,
         padding: 3%;
         padding-bottom: 0;
         flex-direction: row;
+        position: relative;
     }
 
     .menuindex ul li {
@@ -231,7 +232,8 @@ body .sites {
 
 .content video {
     margin-left: 15%;
-    width: 500px;
+    border-radius: 10%;
+    box-shadow: 10px 0px 30px black;
 }
 
 .content article {
@@ -243,14 +245,15 @@ body .sites {
 }
 
 aside h1 {
-    text-align: justify;
+    text-align: center;
     font-size: 3rem;
     font-family: 'Tagon';
     padding-bottom: 5%;
 }
 
 aside h2 {
-    font-size: 1rem;
+    text-align: center;
+    font-size: .9rem;
     font-family: 'RobotoLight';
 }
 
@@ -259,6 +262,7 @@ aside p {
     text-align: justify;
     font-family: 'RobotoLight';
     line-height: 1.3rem;
+    color: hsl(0, 0%, 100%, .8);
 }
 
 @media (max-width: 700px) {
@@ -269,7 +273,6 @@ aside p {
 
     .content video {
         margin-left: 0;
-        width: 300px;
     }
 
     .content aside {
