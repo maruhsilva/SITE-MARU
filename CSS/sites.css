@@ -280,4 +280,8 @@ aside p {
         padding: 5%;
         padding-top: 10%;
     }
+
+    aside h2 {
+        font-size: .8rem;
+    }
 }
