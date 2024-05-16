@@ -329,7 +329,9 @@ body .sites {
         padding-top: 0;
         padding-left: 3%;
         padding-right: 3%;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
