@@ -136,6 +136,7 @@ body .menuindex,
         flex-direction: column;
         justify-content: space-around;
         display: flex;
+        z-index: 1;
     }
 
     #nav_check:checked ~ .menuindex ul {
@@ -310,7 +311,7 @@ body .sites {
 
     .content aside h2 {
         font-size: 1rem;
-        top: 87px;
+        top: 78px;
         color: #fff;
         position: relative;
         padding-top: 0;
@@ -323,7 +324,7 @@ body .sites {
     }
 
     .content aside h1 {
-        font-size: 8rem;
+        font-size: 7rem;
         color: hsl(0, 0%, 0%, .5);
         padding-top: 0;
         padding-left: 3%;
