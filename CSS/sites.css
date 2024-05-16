@@ -213,10 +213,12 @@ body .sites {
     font-family: 'Tagon';
     letter-spacing: .1rem;
     color: #fff;
+    padding: 0;
 }
 
 .sites h2 {
     font-size: 1rem;
+    padding: 0;
     font-family: 'RobotoLight';
 }
 
@@ -227,6 +229,7 @@ body .sites {
     align-items: center;
     justify-content: center;
     padding: 5%;
+    padding-bottom: 0;
     padding-top: 1%;
 }
 
@@ -241,28 +244,53 @@ body .sites {
 }
 
 .content aside {
-    width: 500px;
+    width: 550px;
 }
 
-aside h1 {
+.content aside h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: 'Tagon';
     padding-bottom: 5%;
 }
 
-aside h2 {
+.content aside h2 {
     text-align: center;
     font-size: .9rem;
     font-family: 'RobotoLight';
+    padding: 0;
 }
 
-aside p {
+.content aside p {
     align-items: center;
     text-align: justify;
     font-family: 'RobotoLight';
     line-height: 1.3rem;
     color: hsl(0, 0%, 100%, .8);
+}
+
+
+.content .contato {
+    padding: 5%;
+}
+
+.content aside a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8fa998;
+    padding: 1%;
+    font-family: 'RobotoLight';
+}
+
+.content aside a:hover {
+    background-color: transparent;
+    border: none ;
+    cursor: pointer;
+    transition: .3s;
 }
 
 @media (max-width: 700px) {
@@ -277,11 +305,161 @@ aside p {
 
     .content aside {
         width: 100%;
-        padding: 5%;
-        padding-top: 10%;
+        padding-bottom: 5%;
     }
 
-    aside h2 {
-        font-size: .8rem;
+    .content aside h2 {
+        font-size: 1rem;
+        top: 87px;
+        color: #fff;
+        position: relative;
+        padding-top: 0;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .content aside h1 {
+        font-size: 8rem;
+        color: hsl(0, 0%, 0%, .5);
+        padding-top: 0;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
+}
+
+/*FAQ*/
+
+body .perguntas {
+    background-color: #8fa998;
+    padding-top: 3%;
+}
+
+.perguntas { 
+    padding: 5%;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.perguntas aside h2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-align: justify;
+}
+
+.perguntas aside p {
+    font-size: 1.2rem;
+    font-family: 'RobotoLight';
+    letter-spacing: .03rem;
+    padding-top: 3%;
+}
+
+.container {
+    padding: 2%;
+    padding-bottom: 0;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+h1, h2 {
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 1%;
+}
+
+.ques {
+    background-color: hsl(191, 60%, 21%, .7);
+    color: hsl(0, 0%, 100%, .9);
+    padding: 10px 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-family: 'Roboto';
+    border-bottom: 1px solid hsl(0, 0%, 0%, .3);
+    box-shadow: 10px 10px 10px hsl(0, 0%, 0%, .25);    
+}
+
+.ques .fa-solid.fa-plus {
+    font-size: 15px;
+}
+
+.ques:hover {
+    background-color: #154854;
+
+}
+
+.ans {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+    font-family: 'RobotoLight';
+}
+
+.faq i{
+    transition: all .3s ease-in-out;
+}
+
+.faq-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq.active .ans {
+    max-height: 300px;
+}
+
+.faq.active i{
+    transform: rotate(45deg);
+}
+
+.ans p {
+    background-color: #8fa998;
+    padding: 20px;
+    font-size: 19px;
+    border-top: 1px solid #154854;
+    letter-spacing: .05rem;
+}
+
+.perguntas h1 {
+    font-family: 'Tagon';
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+.perguntas h2 {
+    font-family: 'RobotoLight';
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
+@media (max-width: 700px) {
+
+    .perguntas {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 2%;
+    }
+
+    h1 {
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-bottom: .5%;
+    }
+
+    h2 {
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-bottom: 5%;
     }
 }
