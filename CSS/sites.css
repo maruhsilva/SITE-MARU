@@ -322,6 +322,8 @@ body .sites {
         font-size: 8rem;
         color: hsl(0, 0%, 0%, .5);
         padding-top: 0;
+        padding-left: 3%;
+        padding-right: 3%;
         letter-spacing: .5rem;
         text-align: center;
     }
