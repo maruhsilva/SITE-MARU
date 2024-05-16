@@ -315,6 +315,10 @@ body .sites {
         position: relative;
         padding-top: 0;
         margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
         background-color: rgba(0, 0, 0, 0.6);
     }
 
@@ -324,7 +328,6 @@ body .sites {
         padding-top: 0;
         padding-left: 3%;
         padding-right: 3%;
-        letter-spacing: .5rem;
         text-align: center;
     }
 }
