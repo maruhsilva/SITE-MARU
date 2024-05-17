@@ -636,6 +636,10 @@ footer a:hover {
         display: block;
     }
 
+    .hamburger.active {
+        display: none;
+    }
+
     .menulogo img {
         display: block;
         width: 80px;
