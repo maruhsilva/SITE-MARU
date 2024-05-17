@@ -136,11 +136,6 @@ body .menuindex,
         left: 0;
     }
 
-    .menulogo img:hover {
-        width: 95px;
-        height: 95px;
-    }
-
     .menuindex {
         justify-content: space-around;
         padding: 3%;
